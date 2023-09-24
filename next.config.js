@@ -6,7 +6,9 @@ module.exports = {
       config.resolve.fallback.net = false;
       config.resolve.fallback.child_process = false;
     }
-
     return config;
+  },
+  env: {
+    GOOGLE_SERVICE_PRIVATE_KEY: process.env.GOOGLE_SERVICE_PRIVATE_KEY,
   },
 };
